@@ -1,0 +1,1 @@
+mongodb://apoorvi13284:Aashana%402026@ac-r9jevop-shard-00-02.d9i4tt3.mongodb.net:27017,ac-r9jevop-shard-00-00.d9i4tt3.mongodb.net:27017,ac-r9jevop-shard-00-01.d9i4tt3.mongodb.net:27017/moviemate?ssl=true&authSource=admin&replicaSet=atlas-j3860v-shard-0&retryWrites=true&w=majority

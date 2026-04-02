@@ -1,0 +1,290 @@
+/* General body and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #070101;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Center content in a flexible and responsive way */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f8f1f1;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #fcd5ce, #ff7f50, #8b0000); /* light pink → warm orange → deep red */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent;
+    animation: wipeText .5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes wipeText {
+  0% {
+    background-position: 0% center;
+    opacity: 0;
+  }
+  100% {
+    background-position: 100% center;
+    opacity: 1;
+  }
+}
+ 
+  
+  
+  
+  
+  /* Button styles */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Input field styles */
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form input {
+    margin-bottom: 15px;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Layout for links */
+  .link-container {
+    margin-top: 20px;
+  }
+  
+  /* Styling for links */
+  a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Authentication UI Container & Glassmorphism */
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+  }
+  
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.05); /* very subtle white */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 16px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .glass-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px 0 rgba(255, 127, 80, 0.2);
+  }
+  
+  .premium-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch children to fill */
+    gap: 15px; /* Spacing between rows */
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center; /* Vertically align label and input */
+    justify-content: space-between; /* Space out the label and the input */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group:focus-within {
+    border-color: #ff7f50;
+    box-shadow: 0 0 10px rgba(255, 127, 80, 0.4);
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .input-group label {
+    color: #e0e0e0;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 15px;
+    flex-shrink: 0;
+    width: 80px; /* Fixed width for labels to align properly */
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .input-group input {
+    flex-grow: 1; /* Input takes up the rest of the space */
+    background: transparent;
+    border: none; /* Removed individual borders since group handles it */
+    padding: 10px 5px;
+    margin: 0;
+    color: white;
+    width: auto;
+    font-size: 16px;
+  }
+  
+  /* Reset input focus to avoid double glowing edges */
+  .input-group input:focus {
+    outline: none;
+    border-color: transparent; 
+  }
+  
+  .submit-group {
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .premium-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #ff7f50, #ff4500);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 127, 80, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .premium-btn:hover {
+    background: linear-gradient(90deg, #ff4500, #ff7f50);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 127, 80, 0.6);
+  }
+  
+  .error-message {
+    margin-top: 15px;
+    color: #ff6b6b;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+
+/* Responsive Styles for Global UI */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  input {
+    width: 90%;
+    max-width: none;
+  }
+  
+  button {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 26px;
+  }
+}
+  
