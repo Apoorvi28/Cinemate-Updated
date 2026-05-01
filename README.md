@@ -1,4 +1,4 @@
-# 🎬 Cinemate: An Interactive and Emotion‑Adaptive Watch‑Party Platform
+#  Cinemate: An Interactive and Emotion‑Adaptive Watch‑Party Platform
 
 Cinemate is a **web‑based social streaming application** designed to
 bridge the geographical gap between friends and family.
@@ -8,7 +8,7 @@ videos in a synchronized virtual space.
 
 ------------------------------------------------------------------------
 
-## 📌 Project Overview
+##  Project Overview
 
 -   **School:** Chitkara University, Rajpura, Punjab
 -   **Objective:** To create a synchronized multi‑user streaming
@@ -21,7 +21,7 @@ videos in a synchronized virtual space.
 
 ------------------------------------------------------------------------
 
-## 👥 Team Members & Mentor
+##  Team Members & Mentor
 
   Role      Name          ID / Roll No   Contact Details
   --------- ------------- -------------- -----------------------------
@@ -31,7 +31,7 @@ videos in a synchronized virtual space.
 
 ------------------------------------------------------------------------
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 -   **Frontend:** React, Vite
 -   **Backend:** Node.js, Express
@@ -44,30 +44,30 @@ videos in a synchronized virtual space.
 
 ------------------------------------------------------------------------
 
-## ✨ Key Features
+##  Key Features
 
--   🎯 **Flawless Synchronization:**
+-    **Flawless Synchronization:**
     Ensures all participants experience play, pause, and seek actions
     simultaneously.
 
--   💬 **Real‑Time Communication:**
+-    **Real‑Time Communication:**
     Integrated chat system supporting both text and image sharing.
 
--   🎨 **Emotion‑Adaptive UI:**
+-    **Emotion‑Adaptive UI:**
     Mood‑based theme settings to match the viewing atmosphere.
 
--   🔐 **Secure Access:**
+-    **Secure Access:**
     Multi‑factor authentication including login, registration, and
     email‑based OTP.
 
--   🏠 **Room Management:**
+-    **Room Management:**
     Dynamic room creation with creator‑specific controls.
 
 ------------------------------------------------------------------------
 
-## 🚀 Getting Started
+##  Getting Started
 
-### ✅ Prerequisites
+###  Prerequisites
 
 -   Node.js installed
 -   MongoDB instance *(local or MongoDB Atlas)*
@@ -77,27 +77,27 @@ videos in a synchronized virtual space.
 
 ### ⚙️ Installation & Setup
 
-#### 1️⃣ Clone the repository
+#### 1️ Clone the repository
 
 ``` bash
 git clone <your-repository-url>
 ```
 
-#### 2️⃣ Install Backend Dependencies
+#### 2️ Install Backend Dependencies
 
 ``` bash
 cd backend
 npm install
 ```
 
-#### 3️⃣ Install Frontend Dependencies
+#### 3️ Install Frontend Dependencies
 
 ``` bash
 cd frontend
 npm install
 ```
 
-#### 4️⃣ Configuration
+#### 4️ Configuration
 
 Create a `.env` file inside the **backend** directory and add:
 
@@ -105,7 +105,7 @@ Create a `.env` file inside the **backend** directory and add:
     JWT_SECRET=your_jwt_secret
    
 
-#### 5️⃣ Run the Application
+#### 5️ Run the Application
 
 **Start Backend**
 
@@ -121,7 +121,7 @@ npm run dev
 
 ------------------------------------------------------------------------
 
-## 📊 System Usage (Input & Output)
+##  System Usage (Input & Output)
 
   ------------------------------------------------------------------------
   Feature            Input           Expected Output
